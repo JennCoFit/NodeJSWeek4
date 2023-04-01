@@ -1,6 +1,8 @@
 const express = require('express');
 const partnerRouter = express.Router();
 
+const Partner = require('../models/partner');
+
 partnerRouter.route('/')
 .all((req, res, next) => {
     res.statusCode = 200;

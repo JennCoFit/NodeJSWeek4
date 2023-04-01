@@ -1,6 +1,8 @@
 const express = require('express');
 const promotionRouter = express.Router();
 
+const Promotion = require('../models/promotion');
+
 promotionRouter.route('/')
 .all((req, res, next) => {
     res.statusCode = 200;
